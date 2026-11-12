@@ -15,7 +15,7 @@ claude plugin marketplace add Colabonate/colabonate-skill
 claude plugin install colabonate@colabonate
 ```
 
-The site publishes the same skill with a discovery index (rolling out with Colabonate's next production release, so these URLs may not answer yet):
+The site serves the same skill with a discovery index:
 
 - Skill: <https://colabonate.app/.well-known/agent-skills/colabonate/SKILL.md>
 - Index: <https://colabonate.app/.well-known/agent-skills/index.json>
@@ -27,4 +27,4 @@ The skill never asks for keys or wallet strings and requires explicit human appr
 
 ## About this repository
 
-This repository is **generated** from the Colabonate application repository (skill version 0.12.10). Do not edit the files here; open an issue instead. Licensed under MIT.
+This repository is **generated** from the Colabonate application repository (skill version 0.13.0). Do not edit the files here; open an issue instead. Licensed under MIT.
