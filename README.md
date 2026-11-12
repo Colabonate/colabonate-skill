@@ -9,6 +9,8 @@ The skill talks to Colabonate's MCP server at `https://colabonate.app/mcp`. Gues
 ```bash
 # any Agent Skills client via the skills CLI
 npx skills add Colabonate/colabonate-skill
+# ...or straight from the domain (well-known discovery)
+npx skills add https://colabonate.app
 
 # Claude Code
 claude plugin marketplace add Colabonate/colabonate-skill
