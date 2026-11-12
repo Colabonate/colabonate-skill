@@ -1,0 +1,21 @@
+{
+  "name": "colabonate",
+  "owner": {
+    "name": "Colabonate"
+  },
+  "metadata": {
+    "description": "Agent skill for Colabonate (https://colabonate.app), a peer-to-peer marketplace and cooperation platform.",
+    "version": "0.12.10"
+  },
+  "plugins": [
+    {
+      "name": "colabonate",
+      "description": "Use Colabonate (https://colabonate.app), a peer-to-peer marketplace and cooperation platform paid over Bitcoin Lightning and Cashu, through its MCP server. Use when the user wants to find or compare offers, buy something through a ticket, create or update an offer, browse cooperations, tenders or bounties, read DAO proposals, or check orders and notifications on Colabonate. Covers guest read-only access and token-based access with per-connection scopes. Do not use for generic Bitcoin or Lightning wallet tasks unrelated to Colabonate.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/colabonate"
+      ]
+    }
+  ]
+}
