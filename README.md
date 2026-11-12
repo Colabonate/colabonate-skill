@@ -29,4 +29,4 @@ The skill never asks for keys or wallet strings and requires explicit human appr
 
 ## About this repository
 
-This repository is **generated** from the Colabonate application repository (skill version 0.13.0). Do not edit the files here; open an issue instead. Licensed under MIT.
+This repository is **generated** from the Colabonate application repository (skill version 0.14.0). Do not edit the files here; open an issue instead. Licensed under MIT.

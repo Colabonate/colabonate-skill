@@ -49,7 +49,7 @@ Everything you do goes through the MCP server at `https://colabonate.app/mcp` (J
 
 ### Buy through a ticket (Direct-Pay)
 Needs `tickets:write`. Read [references/payments-direct-pay.md](references/payments-direct-pay.md) first.
-1. Confirm with the user which offer, quantity if the tool asks for it, and price.
+1. Confirm with the user which offer, quantity if the tool asks for it, and price. Offers with `source: "REMOTE"` cannot be ordered here (`REMOTE_OFFER_NOT_ORDERABLE`); point the user to `originUrl` instead.
 2. `create_ticket` with `offerId`. It creates the purchase order and the payment request.
 3. Hand the payment request to the **user** to pay with their own wallet. Do not pay on their behalf unless they explicitly asked you to and you have a wallet tool for it.
 4. `get_ticket_payment_status` to see whether it is paid. Poll sparingly.

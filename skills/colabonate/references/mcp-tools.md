@@ -12,7 +12,7 @@ Optional arguments are marked with `?`. Omit what you do not need; never send em
 
 | Tool | Access | Arguments | Purpose |
 |---|---|---|---|
-| `search_offers` | guest | `query?`, `category?`, `offerType?` (`SERVICE` or `PRODUCT`) | Search the marketplace. Compact hits. |
+| `search_offers` | guest | `query?`, `category?`, `offerType?` (`SERVICE` or `PRODUCT`) | Search the marketplace. Compact hits. Each hit may carry `source` (`LOCAL` or `REMOTE`), `priceAmount` and `priceCurrency` (foreign-currency listings), `originUrl` (merchant page), and `orderableOnColabonate: false` on `REMOTE` offers. |
 | `get_offer` | guest | `id` | One full offer. |
 | `search_my_offers` | token | | The user's own offers. |
 | `create_offer` | `offers:write` | `title`, `priceSats`, `offerType`, `description?`, `categoryCode?`, `deliveryTimeDays?`, `status?` (`DRAFT` or `ACTIVE`), `images?` | Creates a DRAFT unless `status` is `ACTIVE`. |
