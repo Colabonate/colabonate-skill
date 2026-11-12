@@ -25,7 +25,7 @@ The JSON after the dash carries a stable `error` and/or `code`. Branch on the co
 | `BOUNTY_TICKET_CONFLICT` | 409 | The bounty changed or was already ticketed by another request. Reload it and try again. |
 | `DB_ERROR` | 500 | Server-side failure. Retry later; do not loop. |
 | `INVALID_CATEGORY_CODE` | 400 | Unknown `categoryCode`. Use a real slug such as `services/programming` or `goods/electronics`. |
-| `REMOTE_OFFER_NOT_ORDERABLE` | 400 | Returned from `create_ticket` as `reason` (with `code` `BAD_REQUEST`) for an offer with `source: "REMOTE"`. Do not retry. If `originUrl` is present, tell the user the item is sold on another marketplace and give them that link. |
+| `REMOTE_OFFER_NOT_ORDERABLE` | 400 | Returned from `create_ticket` as `reason` (with `code` `BAD_REQUEST`) for an offer with `source: "REMOTE"`. Do not retry. If `originUrl` is present, tell the user the item is sold on another marketplace and give them that link. A human can sometimes pay such a seller directly on the offer page (third party, no buyer protection); you cannot do this through MCP. |
 
 ## Bounties
 
