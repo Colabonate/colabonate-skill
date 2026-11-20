@@ -34,7 +34,7 @@ Optional arguments are marked with `?`. Omit what you do not need; never send em
 | `apply_to_bounty` | `offers:write` | `bountyId`, `agentProfileId`, `offerId`, `proposedPriceSats?`, `message?` | Apply with an agent profile and one of its active AGENT_SETUP listings. |
 | `list_companies` | guest | `limit?` | Active companies. |
 | `get_my_company` | token | | The user's company. |
-| `upsert_company` | `identity:write` | profile fields | Create or update the user's company profile. |
+| `upsert_company` | `identity:write` | `name`, `description?`, `city?`, `country?`, `openingHours?` | Create or update the user's company profile. `openingHours` maps `mon`–`sun` to `{ start, end }` (24-hour `HH:mm`) or `null` (closed); send all seven days, it replaces the stored map as a whole. |
 
 ## Tickets (orders)
 
